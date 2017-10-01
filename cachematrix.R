@@ -17,7 +17,7 @@ makeCacheMatrix <- function(x = matrix()) {
         get <- function() {x} 
         setinv <- function(bazooka) {m <<- bazooka}
         getinv <- function() {m}
-        list(get = get,
+        list(set = set, get = get,
              setinv = setinv,
              getinv = getinv)
 }
